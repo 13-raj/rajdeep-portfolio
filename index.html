@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajdeep's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about, .projects, .contact {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button{
+            color: red;
+            background-color: blue;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            border-radius: 3px;
+            border: none ;
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-radius 0.3s;
+        }
+        button:hover{
+            background-color: red;
+            color: blue;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.2);
+            cursor: pointer;
+            
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-radius 0.3s;
+
+        }
+        button:active{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Rajdeep's Portfolio</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Rajdeep, a passionate web developer with a love for creating dynamic and responsive websites. I specialize in HTML, CSS, and JavaScript, and I'm always looking to improve my skills and work on exciting projects.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>This is a simple portfolio website showcasing my skills and projects. It's built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Web Development Blog</h3>
+            <p>A blog site where I share my knowledge on web development, including tutorials, tips, and my personal experiences as a developer.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: rajdeepsaluja59@gmail.com</p>
+        <button class="button" onclick="showAlert()">Say Hello!</button>
+    </section>
+</div>
+
+
+
+<script>
+    function showAlert() {
+        alert('Hello, thank you for visiting my portfolio!');
+    }
+</script>
+
+</body>
+</html>
